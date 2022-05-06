@@ -21,11 +21,11 @@
 <!-- KaTeX -->
 <link rel="stylesheet" href="/Selection-in-Genes-Course/css/katex.css">
 <script src="/Selection-in-Genes-Course/js/katex.min.js"></script>
-<!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.2.10/webcomponents-loader.min.js"></script>
-<!-- Load the element definition -->
-<script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+<!-- Import element definition -->
+<script
+    type="module"
+    src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
+  ></script>
 </head>
 
 <body>
@@ -53,6 +53,8 @@
           <ul class="list-unstyled">
             <div class="smallspacer"></div>
             <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy" target="_blank" rel="nofollow"> primates-nt.phy </a> </li>
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick" target="_blank" rel="nofollow"> primates-nt.newick </a> </li>
           </ul>
         </div>
         <!--div class="spacer"></div>
@@ -70,9 +72,9 @@
     </div>
   </div>
   <div class="col-md-8">
-    <div class="post">
+    <div class="post"> 
       <!-- Simply set the `src` attribute to your MD file and win -->
-      <zero-md class="app" src="https://raw.githubusercontent.com/zerodevx/zero-md/main/README.md"></zero-md>
+      <zero-md class="app" src="https://raw.githubusercontent.com/acg-team/Selection-in-Genes-Course/gh-pages/tutorials/parameter-estimation/README.md"></zero-md>
     </div>
   </div>
 </div>

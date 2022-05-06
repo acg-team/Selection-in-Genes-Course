@@ -1,13 +1,11 @@
-# Motivation
+# Practical: Investigating different parameter estimation approaches
+
+## Motivation
 
 Before going into complex phylogenetic analyses it is important to see the basic workflow and understand that minor changes in the analysis setup (i.e. your prior assumptions) can make a great difference in the result.
 
 In this tutorial you will run PhyML on a given alignment of primate sequences with a fixed tree, and will investigate the difference in the results that stems from different approaches to parameter estimates.
 Bear in mind that this is a warm-up round, as most real-life analyses will most likely not have a phylogenetic tree available.
-
-----
-
-# Practical: Investigating different parameter estimation approaches
 
 ## Data
 
@@ -40,13 +38,13 @@ phyml --help
 
 PhyML allows you to select from a range of standard molecular evolution models like JC69, K80, etc, set the Gamma distribution parameters to allow for across-site variability, estimate the transition/transversion ratio among other options.
 
-Read the manual entry for PhyML that you got with the previous command and do the following:
-
-- [ ] Find out how to provide the input alignment file and specify the data type (nucleotide sequences in a sequential format);
-- [ ] Find out how to set the evolutionary model;
-- [ ] Find out how to set the way stationary nucleotide frequencies are estimated (empirical or maximum likelihood (ML) estimates);
-- [ ] Find out how to provide a user-specified tree;
-- [ ] Find out how to disable tree optimization.
+> Read the manual entry for PhyML that you got with the previous command and do the following:
+>
+> - Find out how to provide the input alignment file and specify the data type (nucleotide sequences in a sequential format);
+> - Find out how to set the evolutionary model;
+> - Find out how to set the way stationary nucleotide frequencies are estimated (empirical or maximum likelihood (ML) estimates);
+> - Find out how to provide a user-specified tree;
+> - Find out how to disable tree optimization.
 
 ### First run
 
@@ -56,8 +54,8 @@ Fix the tree to the provided file and disable tree search.
 
 Set the stationary frequencies to be estimated by ML.
 
-- [ ] Write a command to run PhyML with the specified settings;
-- [ ] Run PhyML in console.
+> - Write a command to run PhyML with the specified settings;
+> - Run PhyML in console.
 
 ### Second run
 
@@ -67,16 +65,16 @@ Fix the tree to the provided file and disable tree search.
 
 Set the stationary frequencies to be estimated epmirically from the data.
 
-- [ ] Write a command to run PhyML with the specified settings;
-- [ ] Run PhyML in console.
+> - Write a command to run PhyML with the specified settings;
+> - Run PhyML in console.
 
 ### Interpreting the results
 
 Now that you ran both analyses, take a look at the statistics from both runs. Is there any difference between the stationary frequencies?
 
-- [ ] Is there any difference between the stationary frequencies?
-- [ ] Is there a difference in the likelihood?
-- [ ] Which estimation option is better and why do you think so?
+> - Is there any difference between the stationary frequencies?
+> - Is there a difference in the likelihood?
+> - Which estimation option is better and why do you think so?
 
 <!--Set the model to HKY+Gamma, estimating the transition/transversion ratio and the alpha parameter of the Gamma distribution by maximum likelihood (ML), nucleotide frequencies are estimated by ML.-->
 

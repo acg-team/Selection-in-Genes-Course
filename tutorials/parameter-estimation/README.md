@@ -1,4 +1,4 @@
-# Practical: Investigating different parameter estimation approaches
+# Investigating different parameter estimation approaches
 
 ## Motivation
 
@@ -11,13 +11,7 @@ Bear in mind that this is a warm-up round, as most real-life analyses will most 
 
 Before we can perform any analyses, we need to download the inout data for this tutorial. We will use an alignment file in PhyLip format, `primate-nt.phy`, and a phylogenetic tree file, `primate-tree.newick`.
 
-> **Downloading data**
-> 
-> A link to the alignment file, `primate-nt.phy`, is on the left-hand panel, under the heading **Data**.
-> **Right-click** on the link and select **"Save Link As..."** (Firefox and Chrome) or **"Download Linked File As..."** (Safari) and save the file to a location on your local drive. Note that some browsers will automatically change the extension of the file from `.phy` to `.phy.txt`. If this is the case, simply rename the file. 
->
-> Alternatively, if you **left-click** on the link most browsers will display the alignment file. You can then press **File > Save As** to store a local copy of the file. Note that some browsers will inject an HTML header into the file, which will make it unusable (making this the less preferable option for downloading data files).
->
+Both of these files are available on the left-hand panel under the heading **Data**.
 
 
 ## Setting up the analysis with PhyML
@@ -32,7 +26,7 @@ Once you've downloaded the data, set up two analyses with the same input files.
 
 Before you start, run the help comand of PhyML to see the parameter options you can choose:
 
-```
+```shell
 phyml --help
 ```
 
@@ -93,7 +87,7 @@ Example output files are provided on the left-hand panel, under the heading **Ou
 
 Run the PhyML console user interface by simply typing phyml in the console:
 
-```
+```shell
 phyml
 ```
 
@@ -110,12 +104,12 @@ Unfortunately you can't set the seed in the GUI, so you'll have to run the analy
 
 To make your task easier, here are the commands that set the right parameters (adjust the file paths according to where you stored the files and set the seed):
 
-```
+```shell
 phyml -i ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -u ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id ml --r_seed 1651861751
 ```
 
 <!--phyml -i /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -u /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id ml --r_seed 1651861751-->
 
-```
+```shell
 phyml -i ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f e -a e -t e -v 0 -u ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id empirical --r_seed 13 
 ```

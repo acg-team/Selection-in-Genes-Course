@@ -8,7 +8,7 @@ In this tutorial you will investigate the difference between a simple distance-b
 
 ## Data
 
-Before we can perform any analyses, we need to download the input data for this tutorial. For this tutorial we will use an alignment file in PhyLip format, same as we used in the first tutorial, `primate-nt.phy`.
+For this tutorial we will use an alignment file in PhyLip format, same as we used in the first tutorial, `primate-nt.phy`.
 
 This file is available on the left-hand panel under the heading **Data**.
 

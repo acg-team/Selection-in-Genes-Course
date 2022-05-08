@@ -2,9 +2,9 @@
 
 ## Motivation
 
+While many molecular evolution models are available, there is no obvious way to tell which one describes your data better than others. On the one hand, simple evolutionary models are computationally less demanding, but are clearly an oversimplification of reality. On the other hand, complex models are more realistic, but computationally costly and prone to overfitting.
 
-
-In this tutorial you will investigate substitution model selection on a limited set of models. 
+We need to be clever about selecting a model that is appropriate for our data, and use statistical criteria to justify our choices. In this tutorial you will investigate substitution model selection on a limited set of models to find out which would be a better fit to the dataset you're given.
 
 ## Data
 
@@ -74,3 +74,4 @@ Now that you computed the AIC for all the models, rank them best to worst.
 > - Could we have used LRT to choose among models? Why or why not?
 
 <!--HKY = Trans/transv + pi?-->
+

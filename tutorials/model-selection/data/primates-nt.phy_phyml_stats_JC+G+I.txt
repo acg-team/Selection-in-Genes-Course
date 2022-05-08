@@ -1,0 +1,47 @@
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+                                  ---  PhyML 3.3.20220408  ---                                             
+                              http://www.atgc-montpellier.fr/phyml                                          
+                             Copyright CNRS - Universite Montpellier                                 
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+
+. Sequence filename: 			primates-nt.phy
+. Data set: 				#1
+. Initial tree: 			BioNJ
+. Model of nucleotides substitution: 	JC69
+. Number of taxa: 			20
+. Log-likelihood: 			-6304.47991
+. Unconstrained log-likelihood: 	-5060.29926
+. Composite log-likelihood: 		-41672.00850
+. Parsimony: 				739
+. Tree size: 				0.53727
+. Discrete gamma model: 		Yes
+  - Number of classes: 			4
+  - Gamma shape parameter: 		0.928
+  - Relative rate in class 1: 		0.12234 [freq=0.250000] 		
+  - Relative rate in class 2: 		0.45393 [freq=0.250000] 		
+  - Relative rate in class 3: 		0.98693 [freq=0.250000] 		
+  - Relative rate in class 4: 		2.43679 [freq=0.250000] 		
+. Proportion of invariant: 		0.179
+. Nucleotides frequencies:
+  - f(A)=  0.25000
+  - f(C)=  0.25000
+  - f(G)=  0.25000
+  - f(T)=  0.25000
+
+. Run ID:				JC+G+I
+. Random seed:				1652034903
+. Subtree patterns aliasing:		no
+. Version:				3.3.20220408
+. Time used:				0h0m2s (2 seconds)
+
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ Suggested citations:
+ S. Guindon, JF. Dufayard, V. Lefort, M. Anisimova, W. Hordijk, O. Gascuel
+ "New algorithms and methods to estimate maximum-likelihood phylogenies: assessing the performance of PhyML 3.0."
+ Systematic Biology. 2010. 59(3):307-321.
+
+ S. Guindon & O. Gascuel
+ "A simple, fast, and accurate algorithm to estimate large phylogenies by maximum likelihood"
+ Systematic Biology. 2003. 52(5):696-704.
+ oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo

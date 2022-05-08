@@ -8,7 +8,7 @@ In this tutorial you will investigate substitution model selection on a limited 
 
 ## Data
 
-Before we can perform any analyses, we need to download the input data for this tutorial. For this tutorial we will use an alignment file in PhyLip format, same as we used in the first tutorial, `primate-nt.phy`. 
+For this tutorial we will use an alignment file in PhyLip format, same as we used in the first tutorial, `primate-nt.phy`.
 
 This file is available on the left-hand panel under the heading **Data**.
 
@@ -72,14 +72,5 @@ Now that you computed the AIC for all the models, rank them best to worst.
 > - Which model fits the data best based on AIC?
 > - Why does AIC penalise more parameters over fewer parameters?
 > - Could we have used LRT to choose among models? Why or why not?
-
-| <!--Run ID-->      | <!--No of parameters--> | <!--Likelihood--> | <!--AIC-->         |
-| ------------------ | ----------------------- | ----------------- | ------------------ |
-| <!--**JC**-->      | <!--37+0+0+0 = 37-->    | <!---6379.7-->    | <!--12833.4-->     |
-| <!--**JC+G**-->    | <!--37+0+0+1 = 38-->    | <!---6304.4-->    | <!--12684.8-->     |
-| <!--**JC+G+I**-->  | <!--37+0+1+1 = 39-->    | <!---6304.5-->    | <!--12687.0-->     |
-| <!--**HKY**-->     | <!--37+4+0+0 = 41-->    | <!---6251.0-->    | <!--12584.0-->     |
-| <!--**HKY+G**-->   | <!--37+4+1+0 = 42-->    | <!---6172.6-->    | <!--**12429.2**--> |
-| <!--**HKY+G+I**--> | <!--37+4+1+1 = 43-->    | <!---6172.6-->    | <!--12431.2-->     |
 
 <!--HKY = Trans/transv + pi?-->

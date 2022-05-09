@@ -21,7 +21,7 @@ Once you've downloaded the data, set up two analyses with the same input file.
 
 ### First run
 
-Set up PhyML to analyse the data using the HKY85 model with the gamma distribution parameter, the transition/transversion ratio and the stationary frequencies estimated by ML, and the proportion of invariable sites set to 0.
+Set up PhyML to analyse the data using the **HKY85+G** model with the gamma distribution parameter **α**, the transition/transversion ratio **κ** and the stationary frequencies **π** estimated by ML, and the proportion of invariable sites **p** set to 0.
 
 Set the starting tree to one computed using BioNJ and disable tree topology and branch length optimisation, but keep rate parameter optimisation active.
 
@@ -32,7 +32,7 @@ Additionally, set the run ID to "bionj".
 
 ### Second run
 
-Set up PhyML to analyse the data using the HKY85 model with the gamma distribution parameter, the transition/transversion ratio and the stationary frequencies estimated by ML, and the proportion of invariable sites set to 0.
+Set up PhyML to analyse the data using the **HKY85+G** model with the gamma distribution parameter **α**, the transition/transversion ratio **κ** and the stationary frequencies **π** estimated by ML, and the proportion of invariable sites **p** set to 0.
 
 Set the starting tree to one computed using BioNJ and enable full tree search.
 

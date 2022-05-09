@@ -45,10 +45,10 @@ Once you've downloaded the data, set up and run the analyses with the same MSA, 
 ## Computing the Akaike Information Criterion
 
 Once all 6 runs are completed, compute the Akaike Information Criterion (AIC) for each run:
-$$
-AIC = 2k - 2\mathrm{log}(L),
-$$
-where $k$ is the number of free parameters of the model and $L$ is the likelihood that you get for the best tree under this model.
+
+<img src="https://render.githubusercontent.com/render/math?math=AIC = 2k - 2\mathrm{log}(L)">
+
+where _k_ is the number of free parameters of the model and _L_ is the likelihood that you get for the best tree under this model.
 
 > - Find out the number of free parameters for each model;
 > - Find the likelihood value for the ML tree in each run;

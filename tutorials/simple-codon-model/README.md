@@ -29,13 +29,11 @@ You will need to set up two runs with the same input files.
 
 Set up CodeML to analyse the given alignment and tree under the **M0** model.
 
-<!--Codon model to use? F1X4?-->
+Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and **ω**.
 
 In this run, fix the branch lengths of the tree to the ones given by the input file.
 
-<!--No clock, unrooted tree, fixed branch lengths?-->
-
-Additionally, set the name of the output file to `HIVenvSweden_M0_fixedbranches.txt`.
+Finally, set the name of the output file to `HIVenvSweden_M0_fixedbranches.txt`.
 
 > - Write a control file to run CodeML with the specified settings;
 > - Run CodeML in console.
@@ -46,11 +44,9 @@ Additionally, set the name of the output file to `HIVenvSweden_M0_fixedbranches.
 
 Set up CodeML to analyse the given alignment and tree under the **M0** model.
 
-<!--Codon model to use? F1X4?-->
+Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and **ω**.
 
 In this run, allow CodeML to estimate the branch lengths of the tree.
-
-<!--Clock, rooted tree, initial branch lengths?-->
 
 Additionally, set the name of the output file to `HIVenvSweden_M0_MLbranches.txt`.
 
@@ -64,8 +60,8 @@ Now that you ran both analyses, open the statistics files from the two runs. Stu
 > - Among the two runs, when is the log-likelihood higher? Why do you think it is?
 > - In the run with estimated branch lengths, do you observe codon usage bias?
 > -  Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?
-> - What is the ML estimate of the transition-transversion ratio κ? 
-> - What is the ML estimate of the ω-ratio? How would you interpret these ML estimates?
+> - What are the estimates of the transition-transversion ratio κ? 
+> - What are the estimates of ω? How would you interpret these estimates?
 > - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 
 Example output files are provided on the left-hand panel, under the heading **Output**.

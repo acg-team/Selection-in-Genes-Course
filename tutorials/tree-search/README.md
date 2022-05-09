@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Often times the first step in any analysis is phylogenetic tree inference. Maximum likelihood and Bayesian methods often take a long time to find a tree, so it is important to understand why these methods are percieved as the state-of-the-art respite their computational burden.
+Often times the first step in any analysis is phylogenetic tree inference. Maximum likelihood and Bayesian methods often take a long time to find a tree, so it is important to understand why these methods are percieved as the state-of-the-art despite their computational burden.
 
 In this tutorial you will investigate the difference between a simple distance-based method for estimating phylogenetic trees (BioNJ) and a maximum likelihood tree search.
 

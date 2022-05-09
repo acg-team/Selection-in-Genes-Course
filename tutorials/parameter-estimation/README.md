@@ -43,11 +43,11 @@ PhyML allows you to select from a range of standard molecular evolution models l
 
 ### First run
 
-Set up PhyML to analyse the data using the HKY85 model with the gamma distribution parameter and the transition/transversion ratio estimated by ML, and the proportion of invariable sites set to 0.
+Set up PhyML to analyse the data using the **HKY85+G** model with the gamma distribution parameter **α** and the transition/transversion ratio **κ** estimated by ML, and the proportion of invariable sites **p** equal to 0.
 
 Fix the tree to the provided file and disable tree topology and branch length optimisation, but keep rate parameter optimisation active.
 
-Set the stationary frequencies to be estimated by ML.
+Set the stationary frequencies to be *estimated by ML*.
 
 Additionally, set the run ID to "ml".
 
@@ -56,11 +56,11 @@ Additionally, set the run ID to "ml".
 
 ### Second run
 
-Set up PhyML to analyse the data using the HKY85 model with the gamma distribution parameter and the transition/transversion ratio estimated by ML, and the proportion of invariable sites set to 0.
+Set up PhyML to analyse the data using the **HKY85+G** model with the gamma distribution parameter **α** and the transition/transversion ratio **κ** estimated by ML, and the proportion of invariable sites **p** equal to 0.
 
 Fix the tree to the provided file and disable tree topology and branch length optimisation, but keep rate parameter optimisation active.
 
-Set the stationary frequencies to be estimated empirically from the data.
+Set the stationary frequencies to be estimated *empirically* from the data.
 
 Additionally, set the run ID to "empirical".
 

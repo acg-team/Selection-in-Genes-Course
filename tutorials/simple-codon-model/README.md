@@ -4,7 +4,7 @@
 
 Detecting selection is a powerful tool to increase our understanding of evolution. To start off easy, we will first run an analysis with the simple one ratio model, one that assumes the same selective pressure on all sites and throughout time. 
 
-In this tutorial we will use CodeML -- a program from the PAML package from Ziheng Yang -- to detect whether a specific gene is under selection. We will use a dataset that was previously published and try to recreate existing results.
+In this tutorial we will use CodeML - a program from the PAML package from Ziheng Yang - to detect whether a specific gene is under selection. We will use a dataset that was previously published and try to recreate existing results.
 
 ## Data
 
@@ -35,7 +35,7 @@ In this run, fix the branch lengths of the tree to the ones given by the input f
 
 <!--No clock, unrooted tree, fixed branch lengths?-->
 
-Additionally, set the name of the output file to `HIVenvSweden_M0_fixedbranches`
+Additionally, set the name of the output file to `HIVenvSweden_M0_fixedbranches.txt`.
 
 > - Write a control file to run CodeML with the specified settings;
 > - Run CodeML in console.
@@ -52,7 +52,7 @@ In this run, allow CodeML to estimate the branch lengths of the tree.
 
 <!--Clock, rooted tree, initial branch lengths?-->
 
-Additionally, set the name of the output file to `HIVenvSweden_M0_MLbranches`
+Additionally, set the name of the output file to `HIVenvSweden_M0_MLbranches.txt`.
 
 > - Write a control file to run CodeML with the specified settings;
 > - Run CodeML in console.
@@ -66,7 +66,7 @@ Now that you ran both analyses, open the statistics files from the two runs. Stu
 > -  Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?
 > - What is the ML estimate of the transition-transversion ratio κ? 
 > - What is the ML estimate of the ω-ratio? How would you interpret these ML estimates?
-> - Compare your results to the analyses of this dataset in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/) (it is dataset D10). Do your observations agree with those of Yang et al.?
+> - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 
 Example output files are provided on the left-hand panel, under the heading **Output**.
 

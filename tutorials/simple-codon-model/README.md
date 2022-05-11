@@ -53,16 +53,30 @@ Additionally, set the name of the output file to `HIVenvSweden_M0_MLbranches.txt
 > - Write a control file to run CodeML with the specified settings;
 > - Run CodeML in console.
 
+### Bonus run
+
+Set up CodeML to analyse the given alignment and tree under the **M0** model.
+
+Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and **ω**.
+
+In this run, allow CodeML to estimate the branch lengths of the tree, but set the initial branch lengths to random (`fix_blength = -1`).
+
+Additionally, set the name of the output file to `HIVenvSweden_M0_randominitialbranches.txt`.
+
+> - Write a control file to run CodeML with the specified settings;
+> - Run CodeML in console.
+
 ## Interpreting the results
 
 Now that you ran both analyses, open the statistics files from the two runs. Study the output of the runs and try to answer the following questions:
 
-> - Among the two runs, when is the log-likelihood higher? Why do you think it is?
+> - Among the two first runs, when is the log-likelihood higher? Why do you think it is?
 > - In the run with estimated branch lengths, do you observe codon usage bias?
 > -  Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?
 > - What are the estimates of the transition-transversion ratio κ? 
 > - What are the estimates of ω? How would you interpret these estimates?
 > - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
+> - Between the second run and the "bonus" run, are the tree branch estimates different? Are there a lot of differences between the two runs?
 
 Example output files are provided on the left-hand panel, under the heading **Output**.
 

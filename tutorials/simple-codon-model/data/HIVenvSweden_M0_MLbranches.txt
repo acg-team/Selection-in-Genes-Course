@@ -232,4 +232,4 @@ tree length for dN:       0.5771
 tree length for dS:       0.6403
 
 
-Time used:  0:07
+Time used:  0:08

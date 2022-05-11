@@ -1,5 +1,5 @@
       seqfile = HIVenvSweden.phy    * sequence data file name
-     treefile = HIVenvSweden_fixed.trees   * tree structure file name
+     treefile = HIVenvSweden.trees   * tree structure file name
 
       outfile = HIVenvSweden_M0_fixedbranches.txt          * main result file name
         noisy = 3   * 0,1,2,3,9: how much rubbish on the screen

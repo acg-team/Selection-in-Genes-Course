@@ -9,7 +9,7 @@
 
       seqtype = 1   * 1:codons; 2:AAs; 3:codons-->AAs
     CodonFreq = 2   * 0:1/61 each, 1:F1X4, 2:F3X4, 3:codon table
-        clock = 1   * 0: no clock, unrooted tree, 1: clock, rooted tree
+        clock = 0   * 0: no clock, unrooted tree, 1: clock, rooted tree
        aaDist = 0   * 0:equal, +:geometric; -:linear, {1-5:G1974,Miyata,c,p,v}
         model = 0
 

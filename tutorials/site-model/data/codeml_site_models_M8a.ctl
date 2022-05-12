@@ -1,7 +1,7 @@
       seqfile = bglobin.phy    * sequence data file name
      treefile = bglobin.trees   * tree structure file name
 
-      outfile = bglobin_site_models_M0.txt          * main result file name
+      outfile = bglobin_site_models_M8a.txt          * main result file name
         noisy = 3   * 0,1,2,3,9: how much rubbish on the screen
       verbose = 0   * 1: detailed output, 0: concise output
       runmode = 0   * 0: user tree;  1: semi-automatic;  2: automatic
@@ -13,7 +13,7 @@
        aaDist = 0   * 0:equal, +:geometric; -:linear, {1-5:G1974,Miyata,c,p,v}
         model = 0
 
-      NSsites = 0
+      NSsites = 8
                     * 0:one w; 1:NearlyNeutral; 2:PositiveSelection; 3:discrete;
                     * 4:freqs; 5:gamma;6:2gamma;7:beta;8:beta&w;9:beta&gamma;10:3normal
         icode = 0   * 0:standard genetic code; 1:mammalian mt; 2-10:see below
@@ -21,8 +21,9 @@
 
     fix_kappa = 0   * 1: kappa fixed, 0: kappa to be estimated
         kappa = .3   * initial or fixed kappa
-    fix_omega = 0   * 1: omega or omega_1 fixed, 0: estimate 
-        omega = 1.3  * initial or fixed omega, for codons or codon-based AAs
+    fix_omega = 1   * 1: omega or omega_1 fixed, 0: estimate 
+        omega = 1  * initial or fixed omega, for codons or codon-based AAs
+        ncatG = 10   * # of categories in the dG or AdG models of rates
 
         getSE = 0   * 0: don't want them, 1: want S.E.s of estimates
  RateAncestor = 0   * (0,1,2): rates (alpha>0) or ancestral states (1 or 2)

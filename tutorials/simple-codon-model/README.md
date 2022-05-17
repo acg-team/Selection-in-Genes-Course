@@ -8,7 +8,9 @@ In this tutorial we will use CodeML - a program from the PAML package from Zihen
 
 ## Data
 
-For this tutorial we will use an alignment file of 13 HIV *env* gene sequences from Sweden. This dataset was first published in 1997 [[Leitner et al., 1997](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC191698/)], and is quite unique as the transmission history is exactly known for these samples. This same dataset was later analised for signs of selection by [Yang et al., 2000](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/).
+For this tutorial we will use an alignment file of 13 HIV-1 *env* gene V3 region sequences from Sweden. This dataset was first published in 1997 [[Leitner et al., 1997](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC191698/)], and is quite unique as the transmission history is exactly known for these samples. This same dataset was later analised for signs of selection by [Yang et al., 2000](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/).
+
+The *env* gene is in fact one of the best-known examples of adaptive evolution (see, e.g. [Yamaguchi and Gojobori, 1997](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC19779/)). This can be expected, as this gene is the one that allows the virus to target and attach to specific cell types, as well as to infiltrate the target cell membrane. The selective pressure on this gene presumably comes from the surveillance of the host immune system.
 
 For such analyses we need an alignment of homologous protein-coding DNA sequences that start with the 1st codon position and end with a 3rd. We will use an alignment file in PhyLip format, `HIVenvSweden.phy`, and the corresponding phylogenetic tree file, `HIVenvSweden.trees`.
 
@@ -71,8 +73,6 @@ Additionally, set the name of the output file to `HIVenvSweden_M0_randominitialb
 Now that you ran both analyses, open the statistics files from the two runs. Study the output of the runs and try to answer the following questions:
 
 > - Among the two first runs, when is the log-likelihood higher? Why do you think it is?
-> - In the run with estimated branch lengths, do you observe codon usage bias?
-> -  Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?
 > - What are the estimates of the transition-transversion ratio κ? 
 > - What are the estimates of ω? How would you interpret these estimates?
 > - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
@@ -80,4 +80,8 @@ Now that you ran both analyses, open the statistics files from the two runs. Stu
 
 Example output files are provided on the left-hand panel, under the heading **Output**.
 
-<!--How to read off codon usage bias?-->
+<!--In the run with estimated branch lengths, do you observe codon usage bias?-->
+
+<!--Study the statistics of nucleotide usage for different codon positions. Which position displays the most bias? Why?-->
+
+## Answers

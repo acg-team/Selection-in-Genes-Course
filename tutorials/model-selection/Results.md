@@ -4,51 +4,35 @@ In case you would like to compare your commands to the ones that were used to pr
 
 #### JC:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -c 1 -v 0 -o lr --run_id JC
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -c 1 -v 0 -o lr --run_id JC`
 
 #### JC+G:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -a e -v 0 -o lr --run_id JC+G
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -a e -v 0 -o lr --run_id JC+G`
 
 #### JC+I:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -c 1 -v e -o lr --run_id JC+I
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -c 1 -v e -o lr --run_id JC+I`
 
 #### JC+G+I:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -a e -v e -o lr --run_id JC+G+I
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m JC69 -f m -a e -v e -o lr --run_id JC+G+I`
 
 #### HKY:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -c 1 -v 0 -o lr --run_id HKY
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -c 1 -v 0 -o lr --run_id HKY`
 
 #### HKY+G:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -a e -v 0 -o lr --run_id HKY+G
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -a e -v 0 -o lr --run_id HKY+G`
 
 #### HKY+I:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -c 1 -v e -o lr --run_id HKY+I
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -c 1 -v e -o lr --run_id HKY+I`
 
 #### HKY+G+I:
 
-```bash
-phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -a e -v e -o lr --run_id HKY+G+I
-```
+`phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -a e -v e -o lr --run_id HKY+G+I`
 
 ## AIC for all runs
 

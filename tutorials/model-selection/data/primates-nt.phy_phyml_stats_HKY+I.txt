@@ -8,25 +8,27 @@
 . Sequence filename: 			primates-nt.phy
 . Data set: 				#1
 . Initial tree: 			user tree (/Users/pece/Repositories/Selection-in-Genes-Course/tutorials/model-selection/data/primates-nt.newick)
-. Model of nucleotides substitution: 	JC69
+. Model of nucleotides substitution: 	HKY85
 . Number of taxa: 			20
-. Log-likelihood: 			-6379.66383
+. Log-likelihood: 			-6180.09682
 . Unconstrained log-likelihood: 	-5060.29926
-. Composite log-likelihood: 		-41672.00850
+. Composite log-likelihood: 		-41517.37404
 . Parsimony: 				739
-. Tree size: 				0.50901
+. Tree size: 				0.53750
 . Discrete gamma model: 		Yes
   - Number of classes: 			1
   - Gamma shape parameter: 		1.000
   - Relative rate in class 1: 		1.00000 [freq=1.000000] 		
+. Proportion of invariant: 		0.491
+. Transition/transversion ratio: 	3.229878
 . Nucleotides frequencies:
-  - f(A)=  0.25000
-  - f(C)=  0.25000
-  - f(G)=  0.25000
-  - f(T)=  0.25000
+  - f(A)=  0.29282
+  - f(C)=  0.21745
+  - f(G)=  0.25639
+  - f(T)=  0.23334
 
-. Run ID:				JC
-. Random seed:				1652888549
+. Run ID:				HKY+I
+. Random seed:				1652891143
 . Subtree patterns aliasing:		no
 . Version:				3.3.20220408
 . Time used:				0h0m0s (0 seconds)

@@ -22,7 +22,7 @@ For the first run the estimate of κ is *2.519*, and for the second it is *2.47*
 
 - > What are the estimates of ω? How would you interpret these estimates?
 
-For the first run the estimate of ω is *0.839*, and for the second it is *0.9*02. Both of these values are below 1, however not significantly. From prior information we also know that this specific gene is a well-known example of adaptive evolution. As in these analyses ω is averaged over all positions in the sequences we can conclude that the exact value is not very informative.
+For the first run the estimate of ω is *0.839*, and for the second it is *0.902*. Both of these values are below 1, however we cannot tell whether they are significantly different from 1. From prior information we also know that this specific gene is a well-known example of adaptive evolution. As in these analyses ω is averaged over all positions in the sequences we can conclude that the exact value is not very informative.
 
 - > Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 

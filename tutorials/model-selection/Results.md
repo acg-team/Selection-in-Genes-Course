@@ -34,7 +34,7 @@ In case you would like to compare your commands to the ones that were used to pr
 
 `phyml -i /path/to/course/tutorials/model-selection/data/primates-nt.phy -d nt -q -u /path/to/course/tutorials/model-selection/data/primates-nt.newick -m HKY85 -f m -a e -v e -o lr --run_id HKY+G+I`
 
-## AIC for all runs
+### AIC for all runs
 
 Once all the runs are complete we can compute the number of parameters for each model and compute the AIC.
 

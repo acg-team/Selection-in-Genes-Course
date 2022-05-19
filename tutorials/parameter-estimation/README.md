@@ -95,21 +95,3 @@ Run the same analyses as before by navigating the user interface. Set the same o
 
 > - Do you get the same values in the output?
 > - Why or why not?
-
-#### Troubleshooting
-
-To check that you actually set the exact same parameters, you can try running the two analyses with the same random seed number. The random seed is what is used to start the pseudo-random number generation in your computer, so chances are that if you set all parameters to the same values and fix the seed you will get an identical replicate of your other analysis.
-
-Unfortunately you can't set the seed in the GUI, so you'll have to run the analysis with the GUI first, then copy the seed used in that run and use it for the console command.
-
-To make your task easier, here are the commands that set the right parameters (adjust the file paths according to where you stored the files and set the seed):
-
-```shell
-phyml -i ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -u ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id ml --r_seed 1651861751
-```
-
-<!--phyml -i /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -u /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id ml --r_seed 1651861751-->
-
-```shell
-phyml -i ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy -d nt -q -m HKY85 -f e -a e -t e -v 0 -u ~/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.newick -o r --run_id empirical --r_seed 13 
-```

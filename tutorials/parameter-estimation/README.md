@@ -95,3 +95,5 @@ Run the same analyses as before by navigating the user interface. Set the same o
 
 > - Do you get the same values in the output?
 > - Why or why not?
+
+## Answers

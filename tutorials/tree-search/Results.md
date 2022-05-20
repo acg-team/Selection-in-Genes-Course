@@ -33,15 +33,20 @@ The likelihood of the BioNJ tree is -6181.134, and the likelihood for the ML-est
 
 The last questions have to be answered using the tree files from the two runs.
 
-<div class="d-flex">
-<figure style="width:49%">
-  <img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/bionj_tree.png" alt="BioNJ tree" style="width:100%">
-  <figcaption align = "center" style="width:100%"> <br>Fig.1, The BioNJ tree computed by PhyML.</figcaption>
-</figure><figure style="width:49%">
-	<img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/ml_tree.png" alt="ML tree" style="width:100%">
-	<figcaption align = "center" style="width:100%"> <br>Fig.2, The tree estimated by PhyML using ML.</figcaption>
+  <div class="row">
+    <div class="col-md-3">
+      <figure>
+  <img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/bionj_tree.png" alt="BioNJ tree" style="width:90%">
+  <figcaption align = "center" style="width:90%"> <br>Fig.1, The BioNJ tree computed by PhyML.</figcaption>
 </figure>
-  </div>
+    </div>
+    <div class="col-md-3">
+        <figure>
+<img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/ml_tree.png" alt="ML tree" style="width:90%">
+<figcaption align = "center" style="width:90%"> <br>Fig.2, The tree estimated by PhyML using ML.</figcaption>
+      </figure>
+    </div>
+    </div>
 
 > - Are these trees different to one another?
 

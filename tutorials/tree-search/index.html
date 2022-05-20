@@ -79,7 +79,7 @@
       </div>
       <div class="spacer"></div>
       <p>
-        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#resultsCollapse" aria-expanded="false" aria-controls="resultsCollapse"> Show answers </button>
+        <button class="btn btn-light" type="button" data-toggle="collapse" href="#resultsCollapse"> Show answers </button>
       </p>
       <div class="collapse" id="resultsCollapse">
         <div class="card card-body">
@@ -104,5 +104,12 @@
     </div>
   </div>
 </div>
+<script>
+  $('#resultsCollapse').on('shown.bs.collapse', function () {
+    $('html, body').animate({
+       scrollTop: $("#resultsCollapse").offset().top
+    }, 500);
+});
+</script>
 </body>
 </html>

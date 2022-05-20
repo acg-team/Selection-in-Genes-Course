@@ -53,8 +53,6 @@ Additionally, open the two tree files, which will be called something like `prim
 > - Are these trees different to one another?
 > - Where do the differences come from?
 
-Example output files are provided on the left-hand panel, under the heading **Output**.
+Example output files are provided on the left-hand panel, under the heading **Example output**.
 
-<!--phyml -i /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/tree-search/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -o r --run_id bionj-->
-
-<!--phyml -i /Users/pece/Repositories/Selection-in-Genes-Course/tutorials/tree-search/data/primates-nt.phy -d nt -q -m HKY85 -f m -a e -t e -v 0 -o tlr --run_id ml_tree-->
+## Answers

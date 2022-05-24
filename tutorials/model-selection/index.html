@@ -38,7 +38,7 @@
       <div class="bigtitle titlebox">
         <div class="bigspacer"></div>
         <ol class="breadcrumb">
-          <li><a class="off" href="/Selection-in-Genes-Course/tutorials/model-selection/index.html">Model Selection with AIC</a></li>
+          <li><a class="off" href="/Selection-in-Genes-Course/tutorials/model-selection/index.html">Model Selection with AIC and LRTs</a></li>
         </ol>
       </div>
       <div class="head"> A tutorial using PhyML </div>
@@ -113,5 +113,12 @@
     </div>
   </div>
 </div>
+  <script>
+  $('#resultsCollapse').on('shown.bs.collapse', function () {
+    $('html, body').animate({
+       scrollTop: $("#resultsCollapse").offset().top
+    }, 500);
+});
+</script>
 </body>
 </html>

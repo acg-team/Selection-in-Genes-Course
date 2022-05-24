@@ -6,6 +6,7 @@
 >
 > 1. There is now a fixed tree file provided to ensure that the analyses are comparable.
 > 2. There are 2 additional model settings for testing.
+> 3. The tutorial now includes some LRTs in addition to AIC computation.
 
 ## Motivation
 
@@ -22,7 +23,7 @@ Both files are available on the left-hand panel under the heading **Data**.
 
 ## Setting up the analyses with PhyML
 
-Once again, we will use the PhyML command line interface to run the analyses. This time you will start 6 independent analyses on the same data, which will allow you to see which model configuration could be best suited for the job.
+Once again, we will use the PhyML command line interface to run the analyses. This time you will start 8 independent analyses on the same data, which will allow you to see which model configuration could be best suited for the job.
 
 Once you've downloaded the data, set up and run the analyses with the same MSA and guide tree, with the 8 different substitution model settings defined in the table below. Allow PhyML to optimise branch lengths of the tree using maximum likelihood in all analyses.
 
@@ -41,13 +42,23 @@ Once you've downloaded the data, set up and run the analyses with the same MSA a
 
 Once all 8 runs are completed, compute the Akaike Information Criterion (AIC) for each run:
 
-<img src="https://render.githubusercontent.com/render/math?math=AIC = 2k - 2\mathrm{log}(L)">
+<img src="https://render.githubusercontent.com/render/math?math=AIC = 2k - 2l">
 
-where _k_ is the number of free parameters of the model and _L_ is the likelihood that you get for the best tree under this model.
+where _k_ is the number of free parameters of the model and _l_ is the logarithm of the likelihood that you get under this model.
 
 > - Find out the number of free parameters for each model;
 > - Find the likelihood value for the ML tree in each run;
 > - Compute the AIC for all 8 models that you ran.
+
+## Performing LRTs to test for among site variation
+
+To test for among site variation we will need to compare the results from models without site variation (no Gamma) to the results of the same model with a Gamma distribution. The LRT statistic is computed as follows:
+
+<img src="https://render.githubusercontent.com/render/math?math=2\Delta l = 2(l_\mathrm{nested} - l_\mathrm{null})">
+
+> - Which of the models in these runs are nested and can be used to test for among site variation?
+> - What are the degrees of freedom for each comparison?
+> - Perform all possible LRTs to test for among site rate variation;
 
 ## Interpreting the results
 
@@ -57,6 +68,11 @@ Now that you computed the AIC for all the models, rank them best to worst.
 > - Does adding invariable sites to the model make a difference to AIC?
 > - Which model fits the data best based on AIC?
 > - Why does AIC penalise more parameters over fewer parameters?
-> - Could we have used LRTs to choose among all or some of these models? Why or why not?
+> - Could we have used LRTs to choose among all of these models? Why or why not?
+
+Using the LRT statistics that you computed, answer the following questions:
+
+> - Which of the LRTs are significant if we set the significance level to 0.05 and apply Bonferroni correction for multiple testing?
+> - What can you conclude from these tests?
 
 ## Answers

@@ -46,7 +46,7 @@ Adding gamma categories for any of the analyses adds another parameter (gamma sh
 
 Knowing the parameter numbers and likelihoods from the runs we can compute the AIC using the following formula:
 
-<img src="https://render.githubusercontent.com/render/math?math=AIC = 2k - 2l">
+$$\mathrm{AIC} = 2k - 2l$$
 
 | Run ID      | No of parameters | Likelihood | AIC          |
 | ----------- | ---------------- | ---------- | ------------ |
@@ -74,22 +74,22 @@ We already know the numbers of parameters for each model, which allows us to eas
 
 The LRT statistic is computed as follows:
 
-<img src="https://render.githubusercontent.com/render/math?math=2\Delta l = 2(l_\mathrm{nested} - l_\mathrm{null})">
+$$2\Delta l = 2(l_\mathrm{alternative} - l_\mathrm{null})$$
 
-| Test                      | Degrees of freedom | LRT     | Significance        |
-| ------------------------- | ------------------ | ------- | ------------------- |
-| **JC** vs **JC+G**        | 38-37 = 1          | 150.566 | < 10e<sup>-20</sup> |
-| **JC+I** vs **JC+G+I**    | 39-38 = 1          | 14.08   | 0.000175            |
-| **HKY** vs **HKY+G**;     | 42-41 = 1          | 156.838 | < 10e<sup>-20</sup> |
-| **HKY+I** vs **HKY+G+I**; | 43-42 = 1          | 15.088  | 0.000103            |
+| Test                      | LRT                                  | Degrees of freedom | Significance        |
+| ------------------------- | ------------------------------------ | ------------------ | ------------------- |
+| **JC** vs **JC+G**        | 2(-6304.381 - (-6379.664)) = 150.566 | 38-37 = 1          | < 10e<sup>-20</sup> |
+| **JC+I** vs **JC+G+I**    | 2(-6304.377 - (-6311.417)) = 14.08   | 39-38 = 1          | 0.000175            |
+| **HKY** vs **HKY+G**;     | 2(-6172.580 - (-6250.999)) = 156.838 | 42-41 = 1          | < 10e<sup>-20</sup> |
+| **HKY+I** vs **HKY+G+I**; | 2(-6172.553 - (-6180.097)) = 15.088  | 43-42 = 1          | 0.000103            |
 
 ### Answers to the tutorial questions
 
 The AIC values on their own are not interpretable, however we can use a set of rules of thumb to interpret the differences in AIC. The rules for differences are as follows:
 
-- <img src="https://render.githubusercontent.com/render/math?math=\Delta_\mathrm{AIC} \leq 2">: model has substantial support;
-- <img src="https://render.githubusercontent.com/render/math?math= 4 \leq \Delta_\mathrm{AIC} \leq 7">: model has considerably less support;
-- <img src="https://render.githubusercontent.com/render/math?math=\Delta_\mathrm{AIC} > 10">: model has essentially no support.
+- $\Delta_\mathrm{AIC} \leq 2$: model has substantial support;
+- $4 \leq \Delta_\mathrm{AIC} \leq 7$ : model has considerably less support;
+- $\Delta_\mathrm{AIC} > 10$: model has essentially no support.
 
 These rule of thumb criteria are defined multiple times in literature, e.g. [Posada and Buckley, 2004](https://academic.oup.com/sysbio/article/53/5/793/2842928).
 

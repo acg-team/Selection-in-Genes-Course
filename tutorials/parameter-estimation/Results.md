@@ -95,7 +95,7 @@ The likelihood for the analysis with empirical stationary frequencies is -6173.4
 
 Depending on the dataset one or the other option will make the most sense. For recently diverged organisms we can safely assume that the empirical frequencies are a good representation of the true stationary frequencies, as in this case. We can conclude this also from the fact that the values are not dramatically different between the two runs. This can save us some computation and reduces the number of parameters that we need to infer.
 
-On the other hand, if we know that the stationary frequencies for a given dataset might differ from empirical, e.g. if the dataset is not a representative sample of the population, it might make sense to estimate them using ML. However, this is a very hard question to answer in general and the answer depends on your knowledge of the specific dataset you are working on.
+On the other hand, if we know that the stationary frequencies for a given dataset might differ from empirical, e.g. if the dataset is not a representative sample of the population, it might make sense to estimate them using ML. However, this is a very hard question to answer in general and the answer depends on your knowledge of the specific dataset you are working on. Moreover, accurate estimation of frequencies in such a case is a lot to expect from a piece of software that only works on the data provided. So, in case you are certain that the stationary frequencies are indeed different to the ones you can deduce from the data, a better strategy might be to provide them to the software as fixed values.
 
 #### Interpreting trees
 
@@ -103,7 +103,7 @@ The last questions have to be answered using the tree files from the two runs.
 
 We can use the tree from the analysis with ML-estimated frequencies as an example:
 
-![](/Users/pece/Repositories/Selection-in-Genes-Course/tutorials/parameter-estimation/figures/tree.png)
+![](https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/parameter-estimation/figures/tree.png)
 
 
 
@@ -117,7 +117,7 @@ The trees should not be different, neither in topology nor in branch lengths as 
 
 ### Checking against the PhyML GUI
 
-To check that you set the exact same parameters in the GUI as in the cmmand line, you can try running the two analyses with the same random seed number. The random seed is what is used to start the pseudo-random number generation in your computer, so chances are that if you set all parameters to the same values and fix the seed you will get an identical replicate of your other analysis.
+To check that you set the exact same parameters in the GUI as in the command line, you can try running the two analyses with the same random seed number. The random seed is what is used to start the pseudo-random number generation in your computer, so chances are that if you set all parameters to the same values and fix the seed you will get an identical replicate of your other analysis.
 
 Unfortunately you cannot set the seed in the GUI, so you will have to run the analysis with the GUI first, then copy the seed used in that run and use it for the console command.
 

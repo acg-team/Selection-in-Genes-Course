@@ -33,20 +33,11 @@ The likelihood of the BioNJ tree is -6181.134, and the likelihood for the ML-est
 
 The last questions have to be answered using the tree files from the two runs.
 
-  <div class="row">
-    <div class="col-md-3">
-      <figure>
-  <img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/bionj_tree.png" alt="BioNJ tree" style="width:90%">
-  <figcaption align = "center" style="width:90%"> <br>Fig.1, The BioNJ tree computed by PhyML.</figcaption>
+<figure>
+  <img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/trees.png" alt="Left: BioNJ tree, right: ML tree" style="width:90%">
+  <figcaption align = "center" style="width:90%"> <br>Left, the BioNJ tree computed by PhyML. Right, the tree estimated by PhyML using ML.</figcaption>
 </figure>
-    </div>
-    <div class="col-md-3">
-        <figure>
-<img src="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/tutorials/tree-search/figures/ml_tree.png" alt="ML tree" style="width:90%">
-<figcaption align = "center" style="width:90%"> <br>Fig.2, The tree estimated by PhyML using ML.</figcaption>
-      </figure>
-    </div>
-    </div>
+
 
 > - Are these trees different to one another?
 
@@ -58,9 +49,4 @@ We can also observe minor differences in topologies. For example, in the BioNJ t
 
 The two trees are estimated using very different methods. BioNJ is a distance-based clustering method with linear computational complexity. It is a greedy clustering approach that only takes into account pairwise distances between sequences. This method is known to be statistically consistent under some conditions, however these conditions are rarely satisfied in real life.
 
-On the other hand, while for such a small dataset the ML tree estimation is also fast, this method is technically NP-complete. Maximum likelihood tree search in its pure form is intractable on datasets of any size greater than 10. However, due to the efficient heuristics that PhyML uses, we can reconstruct a good tree in a reasonable amount of time. The ML reconstruction properly accounts for the evolution of molecular sequences, using an evolutionary model to find the best known fitting tree. Since it is not based on pairwise distances, it also accounts for lineages sharing evolutionary history. This makes ML tree search the preferred method of tree inference over much faster distance-based methods. 
-
-
-
-
-
+On the other hand, while for such a small dataset the ML tree estimation is also fast, this method is technically NP-complete. Maximum likelihood tree search in its pure form is intractable on datasets of any size greater than 10. However, due to the efficient heuristics that PhyML uses, we can reconstruct a good tree in a reasonable amount of time. The ML reconstruction properly accounts for the evolution of molecular sequences, using an evolutionary model to find the best known fitting tree. Since it is not based on pairwise distances, it also accounts for lineages sharing evolutionary history. This makes ML tree search the preferred method of tree inference over much faster distance-based methods.

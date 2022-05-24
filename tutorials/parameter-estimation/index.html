@@ -20,8 +20,8 @@
 
 <!-- KaTeX -->
 <link rel="stylesheet" href="/Selection-in-Genes-Course/css/katex.css">
-<script src="/Selection-in-Genes-Course/js/katex.min.js"></script>
-<!-- Import element definition -->
+<script src="/Selection-in-Genes-Course/js/katex.min.js"></script> 
+<!-- Import element definition --> 
 <script
     type="module"
     src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
@@ -60,7 +60,7 @@
         <div class="smallhead"> Output </div>
         <div class="pad-left smallnote">
           <ul class="list-unstyled">
-           <div class="smallspacer"></div>
+            <div class="smallspacer"></div>
             <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy_phyml_stats_empirical.txt" target="_blank" rel="nofollow"> primates-nt.phy_phyml_stats_empirical.txt </a> </li>
             <div class="smallspacer"></div>
             <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/parameter-estimation/data/primates-nt.phy_phyml_tree_empirical.txt" target="_blank" rel="nofollow"> primates-nt.phy_phyml_tree_empirical.txt </a> </li>
@@ -89,8 +89,8 @@
       </div>
     </div>
   </div>
-  </div>
-  <div class="row">
+</div>
+<div class="row">
   <div class="footerspacer"></div>
   <div class="footer">
     <div class="container">
@@ -105,5 +105,12 @@
     </div>
   </div>
 </div>
+<script>
+  $('#resultsCollapse').on('shown.bs.collapse', function () {
+    $('html, body').animate({
+       scrollTop: $("#resultsCollapse").offset().top
+    }, 500);
+});
+</script>
 </body>
 </html>

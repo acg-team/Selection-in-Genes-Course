@@ -46,10 +46,7 @@ Adding gamma categories for any of the analyses adds another parameter (gamma sh
 
 Knowing the parameter numbers and likelihoods from the runs we can compute the AIC using the following formula:
 
-$$
-\mathrm{AIC} = 2k - 2l
-$$
-
+<center>AIC = 2k - 2l</center>
 
 | Run ID      | No of parameters | Likelihood | AIC          |
 | ----------- | ---------------- | ---------- | ------------ |
@@ -77,9 +74,7 @@ We already know the numbers of parameters for each model, which allows us to eas
 
 The LRT statistic is computed as follows:
 
-$$
-2\Delta l = 2(l_\mathrm{alternative} - l_\mathrm{null})
-$$
+<center>2Δl = 2(l<sub>alternative</sub> - l<sub>null</sub>)</center>
 
 | Test                      | LRT                                  | Degrees of freedom | Significance        |
 | ------------------------- | ------------------------------------ | ------------------ | ------------------- |
@@ -92,9 +87,9 @@ $$
 
 The AIC values on their own are not interpretable, however we can use a set of rules of thumb to interpret the differences in AIC. The rules for differences are as follows:
 
-- $\Delta_\mathrm{AIC} \leq 2$: model has substantial support;
-- $4 \leq \Delta_\mathrm{AIC} \leq 7$ : model has considerably less support;
-- $\Delta_\mathrm{AIC} > 10$: model has essentially no support.
+- Δ<sub>AIC</sub> ≤ 2: model has substantial support;
+- 4 ≤ Δ<sub>AIC</sub> ≤ 7 : model has considerably less support;
+- Δ<sub>AIC</sub> > 10: model has essentially no support.
 
 These rule of thumb criteria are defined multiple times in literature, e.g. [Posada and Buckley, 2004](https://academic.oup.com/sysbio/article/53/5/793/2842928).
 

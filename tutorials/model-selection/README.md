@@ -42,9 +42,9 @@ Once you've downloaded the data, set up and run the analyses with the same MSA a
 
 Once all 8 runs are completed, compute the Akaike Information Criterion (AIC) for each run:
 
-$$\mathrm{AIC} = 2k - 2l$$
+<center>AIC = 2k - 2l</center>
 
-where _k_ is the number of free parameters of the model and _l_ is the logarithm of the likelihood that you get under this model.
+where k is the number of free parameters of the model and l is the logarithm of the likelihood that you get under this model.
 
 > - Find out the number of free parameters for each model;
 > - Find the likelihood value for the ML tree in each run;
@@ -54,7 +54,7 @@ where _k_ is the number of free parameters of the model and _l_ is the logarithm
 
 To test for among site variation we will need to compare the results from models without site variation (no Gamma) to the results of the same model with a Gamma distribution. The LRT statistic is computed as follows:
 
-$$2\Delta l = 2(l_\mathrm{alternative} - l_\mathrm{null})$$
+<center>2Δl = 2(l<sub>alternative</sub> - l<sub>null</sub>)</center>
 
 > - Which of the models in these runs are nested and can be used to test for among site variation?
 > - What are the degrees of freedom for each comparison?

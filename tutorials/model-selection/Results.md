@@ -46,7 +46,10 @@ Adding gamma categories for any of the analyses adds another parameter (gamma sh
 
 Knowing the parameter numbers and likelihoods from the runs we can compute the AIC using the following formula:
 
-$$\mathrm{AIC} = 2k - 2l$$
+$$
+\mathrm{AIC} = 2k - 2l
+$$
+
 
 | Run ID      | No of parameters | Likelihood | AIC          |
 | ----------- | ---------------- | ---------- | ------------ |
@@ -74,7 +77,9 @@ We already know the numbers of parameters for each model, which allows us to eas
 
 The LRT statistic is computed as follows:
 
-$$2\Delta l = 2(l_\mathrm{alternative} - l_\mathrm{null})$$
+$$
+2\Delta l = 2(l_\mathrm{alternative} - l_\mathrm{null})
+$$
 
 | Test                      | LRT                                  | Degrees of freedom | Significance        |
 | ------------------------- | ------------------------------------ | ------------------ | ------------------- |

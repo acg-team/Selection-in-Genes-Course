@@ -2,7 +2,7 @@
 
 ## Motivation
 
-In this tutorial we will use CodeML - a program from the PAML package from Ziheng Yang - to check for selection along different branches of a tree. We will use a dataset that was previously published and try to recreate existing results.
+In this tutorial we will use CodeML - a program from the PAML package from Ziheng Yang - to check for site-specific selection along a foreground branch using a branch-site model. We will use a dataset that was previously published and try to recreate existing results.
 
 ## Data
 

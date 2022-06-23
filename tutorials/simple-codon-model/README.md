@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Detecting selection is a powerful tool to increase our understanding of evolution. To start off easy, we will first run an analysis with the simple one ratio model, one that assumes the same selective pressure on all sites and throughout time. 
+Detecting selection is a powerful tool to increase our understanding of evolution. To start off easy, we will run an analysis with the simple one ratio model, one that assumes the same selective pressure on all sites and throughout time. 
 
 In this tutorial we will use CodeML - a program from the PAML package from Ziheng Yang - to detect whether a specific gene is under selection. We will use a dataset that was previously published and try to recreate existing results.
 
@@ -42,8 +42,6 @@ Finally, set the name of the output file to `HIVenvSweden_M0_fixedbranches.txt`.
 
 ### Second run
 
-<!--Does the second run make sense at all?-->
-
 Set up CodeML to analyse the given alignment and tree under the **M0** model.
 
 Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and **ω**.
@@ -78,7 +76,7 @@ Now that you ran both analyses, open the statistics files from the two runs. Stu
 > - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 > - Between the second run and the "bonus" run, are the tree branch estimates different? Are there a lot of differences between the two runs?
 
-Example output files are provided on the left-hand panel, under the heading **Output**.
+Example output files are provided on the left-hand panel, under the heading **Example output**.
 
 <!--In the run with estimated branch lengths, do you observe codon usage bias?-->
 

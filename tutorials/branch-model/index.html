@@ -4,30 +4,24 @@
 <meta charset="utf-8"/>
 <title>Selection in Genes / about instructors </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Favicon --> 
-<!--link rel="shortcut icon" href="/images/favicon.ico"--> 
-
+<!-- Favicon -->
+<!--link rel="shortcut icon" href="/images/favicon.ico"-->
 <!-- Our style -->
 <link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/css/style.css">
-
-<!-- JQuery and Bootstrap JS (necessary for collapsing navbar) --> 
-<script src="/Selection-in-Genes-Course/js/jquery-3.6.0.min.js"></script> 
-<script src="/Selection-in-Genes-Course/bootstrap/js/bootstrap.bundle.min.js"></script> 
-
+<!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
+<script src="/Selection-in-Genes-Course/js/jquery-3.6.0.min.js"></script>
+<script src="/Selection-in-Genes-Course/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Bootstrap Icons -->
 <link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/bootstrap/icons/bootstrap-icons.css">
-
 <!-- KaTeX -->
 <link rel="stylesheet" href="/Selection-in-Genes-Course/css/katex.css">
-<script src="/Selection-in-Genes-Course/js/katex.min.js"></script> 
-<!-- Import element definition --> 
+<script src="/Selection-in-Genes-Course/js/katex.min.js"></script>
+<!-- Import element definition -->
 <script
     type="module"
     src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"
   ></script>
 </head>
-
 <body>
 <div id="header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="/Selection-in-Genes-Course/index.html"> Selection In Genes 2022 </a> </nav>
@@ -38,7 +32,7 @@
       <div class="bigtitle titlebox">
         <div class="bigspacer"></div>
         <ol class="breadcrumb">
-          <li><a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/index.html">Branch Model in PAML</a></li>
+          <li><a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/index.html">Detecting selection on specific branches in PAML</a></li>
         </ol>
       </div>
       <div class="head"> A tutorial using PAML </div>
@@ -57,7 +51,7 @@
           </ul>
         </div>
         <div class="spacer"></div>
-        <div class="smallhead"> Output </div>
+        <div class="smallhead"> Example output </div>
         <div class="pad-left smallnote">
           <ul class="list-unstyled">
             <div class="smallspacer"></div>
@@ -69,12 +63,42 @@
           </ul>
         </div>
         <div class="spacer"></div>
+        <div class="smallhead"> Example control files </div>
+        <div class="pad-left smallnote">
+          <ul class="list-unstyled">
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/data/codeml_freeratios.ctl" target="_blank" rel="nofollow"> codeml_freeratios.ctl </a> </li>
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/data/codeml_tworatios.ctl" target="_blank" rel="nofollow"> codeml_tworatios.ctl </a> </li>
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/data/codeml_threeratios.ctl" target="_blank" rel="nofollow"> codeml_threeratios.ctl </a> </li>
+          </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="smallhead"> Example tree files </div>
+        <div class="pad-left smallnote">
+          <ul class="list-unstyled">
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/data/lysozymeSmall_colobines.newick" target="_blank" rel="nofollow"> lysozymeSmall_colobines.newick </a> </li>
+            <div class="smallspacer"></div>
+            <li> <i class="bi bi-justify"></i> <a class="off" href="/Selection-in-Genes-Course/tutorials/branch-model/data/lysozymeSmall_colobines_hominoids.newick" target="_blank" rel="nofollow"> lysozymeSmall_colobines_hominoids.newick </a> </li>
+          </ul>
+        </div>
+        <div class="spacer"></div>
       </div>
     </div>
     <div class="col-md-7">
-      <div class="post"> 
-        <!-- Simply set the `src` attribute to your MD file and win -->
+      <div class="post">
         <zero-md class="app" src="https://raw.githubusercontent.com/acg-team/Selection-in-Genes-Course/gh-pages/tutorials/branch-model/README.md"></zero-md>
+      </div>
+      <div class="spacer"></div>
+      <p>
+        <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#resultsCollapse" aria-expanded="false" aria-controls="resultsCollapse"> Show answers </button>
+      </p>
+      <div class="collapse" id="resultsCollapse">
+        <div class="card card-body">
+          <zero-md class="app" src="https://raw.githubusercontent.com/acg-team/Selection-in-Genes-Course/gh-pages/tutorials/branch-model/Results.md"></zero-md>
+        </div>
       </div>
     </div>
   </div>
@@ -94,5 +118,12 @@
     </div>
   </div>
 </div>
+<script>
+  $('#resultsCollapse').on('shown.bs.collapse', function () {
+    $('html, body').animate({
+       scrollTop: $("#resultsCollapse").offset().top
+    }, 500);
+});
+</script>
 </body>
 </html>

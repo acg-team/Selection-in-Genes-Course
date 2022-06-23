@@ -60,11 +60,12 @@ Additionally, set the name of the output file to `lysozymeSmall_threeratios.txt`
 
 ## Interpreting the results
 
-Now that you ran both analyses, open the statistics files from the three runs. Study the output of the runs and try to answer the following questions:
+Now that you ran all analyses, open the statistics files from the three runs. Study the output of the runs and try to answer the following questions:
 
-> - Based on LRTs, what model fits your data the best (among 2-ratio, 3-ratio and free-ratio models)? What are the degrees of freedoms for each comparison?
+> - Based on LRTs, what model fits your data the best (among two-ratio, three-ratio and free-ratio models)?
+> - What are the estimates of ω from the best model? What can you conclude from them?
 > - Compare your results to the analyses of this dataset in the original [paper](https://academic.oup.com/mbe/article/15/5/568/987857?login=false). Do your observations agree with those of Yang?
 
 Example output files are provided on the left-hand panel, under the heading **Output**.
 
-<!--Branch lengths are parameters, ratios are parameters-->
+## Answers

@@ -89,7 +89,7 @@
       </div>
     </div>
     <div class="col-md-7">
-      <div class="post"> 
+      <div class="post">
         <zero-md class="app" src="https://raw.githubusercontent.com/acg-team/Selection-in-Genes-Course/gh-pages/tutorials/branch-site-model/README.md"></zero-md>
       </div>
       <div class="spacer"></div>
@@ -119,5 +119,12 @@
     </div>
   </div>
 </div>
+<script>
+  $('#resultsCollapse').on('shown.bs.collapse', function () {
+    $('html, body').animate({
+       scrollTop: $("#resultsCollapse").offset().top
+    }, 500);
+});
+</script>
 </body>
 </html>

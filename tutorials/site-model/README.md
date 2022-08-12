@@ -1,4 +1,4 @@
-# Site model in CodeML
+# Site models in CodeML
 
 ## Motivation
 

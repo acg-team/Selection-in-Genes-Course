@@ -8,7 +8,7 @@ In this tutorial we will use CodeML - a program from the PAML package from Zihen
 
 For this tutorial we will use a small dataset of lysozyme sequences from primates, previously analysed in [Yang, 1998](https://academic.oup.com/mbe/article/15/5/568/987857?login=false). We will use a 7-species subset that represents the four major primate lineages of the phylogeny to save time on the analyses.
 
-For such analyses we need an alignment of homologous protein-coding DNA sequences that start with the 1st codon position and end with a 3rd. We will use an alignment file in PhyLip format, `lysozymeSmall.phy`, and the corresponding phylogenetic tree file, `lysozymeSmall.trees`.
+For such analyses we need an alignment of homologous protein-coding DNA sequences that start with the 1st codon position and end with a 3rd. We will use an alignment file in PhyLip format, `lysozymeSmall.phy`, and the corresponding phylogenetic tree file, `lysozymeSmall.newick`.
 
 The files are available on the left-hand panel under the heading **Data**.
 
@@ -48,6 +48,6 @@ Now that you ran both analyses, open the statistics files from the runs. Study t
 > - Are the results of the LRT consistent with the results of the analysis of this dataset from the previous tutorial on branch models?
 > - Compare your results to the analyses of this dataset in the original [paper](https://academic.oup.com/mbe/article/22/12/2472/1009544?login=false). Do your observations agree with those of Zhang et al.?
 
-Example output files are provided on the left-hand panel, under the heading **Output**.
+Example output files are provided on the left-hand panel, under the heading **Output from CodeML v4.10.0 **.
 
 ## Answers

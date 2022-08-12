@@ -21,7 +21,7 @@ You will need to set up three different runs with the same input files.
 
 ### First run
 
-Set up CodeML to analyse the lysozyme alignment under the free ratio model for branches, meaning that each branch in the tree can have its own <img src="https://render.githubusercontent.com/render/math?math=d_n/d_s"> ratio **ω**.
+Set up CodeML to analyse the lysozyme alignment under the free ratio model for branches, meaning that each branch in the tree can have its own d<sub>n</sub>/d<sub>s</sub> ratio **ω**.
 
 Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and, of course, all the different **ω** values for each branch.
 
@@ -34,7 +34,7 @@ Additionally, set the name of the output file to `lysozymeSmall_freeratio.txt`
 
 ### Second run
 
-Set up CodeML to analyse the lysozyme alignment only allowing 2 different <img src="https://render.githubusercontent.com/render/math?math=d_n/d_s"> ratios, one for all branches of the tree and one for a specific branch leading to the *Colobine* clade (in our case the *Colobine* clade is represented by two sequences, `Cgu/Can_co` for *Angolan colobus* and `Pne_langur` for *Douc langur*). To do so, you will have to label the branch in the tree file with a tag, e.g. `#1`. 
+Set up CodeML to analyse the lysozyme alignment only allowing 2 different d<sub>n</sub>/d<sub>s</sub> ratios, one for all branches of the tree and one for a specific branch leading to the *Colobine* clade (in our case the *Colobine* clade is represented by two sequences, `Cgu/Can_co` for *Angolan colobus* and `Pne_langur` for *Douc langur*). To do so, you will have to label the branch in the tree file with a tag, e.g. `#1`. 
 
 Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and the two different **ω**.
 
@@ -47,7 +47,7 @@ Additionally, set the name of the output file to `lysozymeSmall_tworatios.txt`
 
 ### Third run
 
-Set up CodeML to analyse the lysozyme alignment allowing 3 different <img src="https://render.githubusercontent.com/render/math?math=d_n/d_s"> ratios, one special branch as defined in the previous run for the *Colobine* clade, and another leading to the *Hominoid* clade, in this dataset represented by `Hsa_Human_` for *Human* and `Hla_gibbon` for *Lar Gibbon*. To do so, you will have to label a second branch in the tree file with a tag different from the previous one, e.g. `#2`. 
+Set up CodeML to analyse the lysozyme alignment allowing 3 different d<sub>n</sub>/d<sub>s</sub> ratios, one special branch as defined in the previous run for the *Colobine* clade, and another leading to the *Hominoid* clade, in this dataset represented by `Hsa_Human_` for *Human* and `Hla_gibbon` for *Lar Gibbon*. To do so, you will have to label a second branch in the tree file with a tag different from the previous one, e.g. `#2`. 
 
 Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and the two different **ω**.
 
@@ -66,6 +66,6 @@ Now that you ran all analyses, open the statistics files from the three runs. St
 > - What are the estimates of ω from the best model? What can you conclude from them?
 > - Compare your results to the analyses of this dataset in the original [paper](https://academic.oup.com/mbe/article/15/5/568/987857?login=false). Do your observations agree with those of Yang?
 
-Example output files are provided on the left-hand panel, under the heading **Output**.
+Example output files are provided on the left-hand panel, under the heading **Output from CodeML v4.10.0**.
 
 ## Answers

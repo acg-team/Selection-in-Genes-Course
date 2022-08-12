@@ -27,6 +27,8 @@ You will need to set up several runs with the same input files.
 
 Set up CodeML to analyse the given alignment and tree under the **M0**, **M3**, **M7**, **M8** and **M8a** models.
 
+For the **M3** model use 3 rate categories.
+
 The **M8a** model is the same as **M8**, but with one of the **ω** fixed to 1. This means that you will use the  `NSsites = 8` control file option, and use  `fix_omega = 1`.
 
 Set the codon frequencies to the **F3X4** model, use the **no clock, unrooted tree** option and let CodeML estimate the substitution model parameters **κ** and **ω**.
@@ -39,12 +41,15 @@ In this run, allow CodeML to estimate the branch lengths of the tree using the b
 
 ## Interpreting the results
 
-Now that you ran both analyses, open the statistics files from the two runs. Study the output of the runs and try to answer the following questions:
+Now that you ran all the analyses, open the statistics files from the runs. Study the output of the runs and try to answer the following questions:
 
-> - Perform likelihood ratio tests on the nested models. Do your tests suggest positive selection?
-> - If LRTs suggest positive selection, which sites are inferred to be under positive selection (models **M8**)?
-> - Compare results from the LRT between **M7** and **M8** and the LRT between **M8a** and **M8**. Are they both significant (or both non-significant)? If they are both significant, do we predict that the same sites are under positive selection?
-> 
+> - Perform likelihood ratio tests on the nested models.
+> - Does the data exhibit a strong variation in the ω rates (test for **M0** vs **M3**)?
+>
+> - Compare results from the LRT between **M7** and **M8** and the LRT between **M8a** and **M8**. Are they both significant (or both non-significant)?
+> - If LRTs suggest positive selection, which sites are inferred to be under positive selection (model **M8**)? Use the Bayes Empirical Bayes estimates and find the sites for which ω is strictily above 1.
 > - Compare your results to the analyses of this dataset (**D2** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 
-Example output files are provided on the left-hand panel, under the heading **Output**.
+Example output files are provided on the left-hand panel, under the heading **Output from CodeML v4.10.0**.
+
+## Answers

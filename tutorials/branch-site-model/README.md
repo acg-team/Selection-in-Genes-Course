@@ -48,6 +48,6 @@ Now that you ran both analyses, open the statistics files from the runs. Study t
 > - Are the results of the LRT consistent with the results of the analysis of this dataset from the previous tutorial on branch models?
 > - Compare your results to the analyses of this dataset in the original [paper](https://academic.oup.com/mbe/article/22/12/2472/1009544?login=false). Do your observations agree with those of Zhang et al.?
 
-Example output files are provided on the left-hand panel, under the heading **Output from CodeML v4.10.0 **.
+Example output files are provided on the left-hand panel, under the heading **Output from CodeML v4.10.0**.
 
 ## Answers

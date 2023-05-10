@@ -1,211 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8"/>
-<title>Selection in Genes</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <title>Selection in Genes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Favicon -->
-<!--link rel="shortcut icon" href="//images/favicon.ico"-->
+  <!-- Favicon -->
+  <!--link rel="shortcut icon" href="//images/favicon.ico"-->
 
-<!-- Our style -->
-<link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/css/style.css">
+  <!-- Our style -->
+  <link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/css/style.css">
 
-<!-- JQuery and Bootstrap JS (necessary for collapsing navbar) --> 
-<script src="/Selection-in-Genes-Course/js/jquery-3.6.0.min.js"></script> 
-<script src="/Selection-in-Genes-Course/bootstrap/js/bootstrap.bundle.min.js"></script> 
+  <!-- JQuery and Bootstrap JS (necessary for collapsing navbar) -->
+  <script src="/Selection-in-Genes-Course/js/jquery-3.6.0.min.js"></script>
+  <script src="/Selection-in-Genes-Course/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/bootstrap/icons/bootstrap-icons.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" type="text/css" href="/Selection-in-Genes-Course/bootstrap/icons/bootstrap-icons.css">
 
-<!-- KaTeX -->
-<link rel="stylesheet" href="/Selection-in-Genes-Course/css/katex.css">
-<script src="/Selection-in-Genes-Course/js/katex.min.js"></script>
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="/Selection-in-Genes-Course/css/katex.css">
+  <script src="/Selection-in-Genes-Course/js/katex.min.js"></script>
 </head>
 
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-11">
-      <div class="bigtitle logobox"> Selection in Genes 2022 </div>
-      <div class="head"> <a class="off" target="_blank" href="http://www.google.com/maps/place/55.7143372436668, 13.208100673448836">Department of Biology, Lund University, Lund, Sweden</a> </div>
-      <div class="smallhead"> May 10, 2022 - May 12, 2022 </div>
-    </div>
-  </div>
-  <div class="bigspacer"></div>
-  
-
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="smallhead">
-			This is a platform containing materials for the course "Selection in Genes" 2022  in Lund, Sweden, by Prof Dr Maria Anisimova and Dr Jūlija Pečerska, from ZHAW, Zürich, Switzerland.
-			
-			Find out more about the <a href="/Selection-in-Genes-Course/about/index.html#course">course</a>, and the instructors <a href="/Selection-in-Genes-Course/about/index.html#Maria">Maria</a> and <a href="/Selection-in-Genes-Course/about/index.html#Julija">Jūlija</a>.
-			
-		</div>
-	</div>	
-</div>
-
-<div class="bigspacer"></div>
-  
-  <div class="row">
-    <div>
-      <h1 id="workshop-programme">Workshop Programme</h1>
-      
-      <table class="table">
-        <thead>
-          <tr>
-            <th></th>
-            <th> Tuesday <br />
-              10.05.2022 </th>
-            <th> Wednesday <br />
-              11.05.2022 </th>
-            <th> Thursday <br />
-              12.05.2022 </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> </td>
-            <td>
-              <strong>Modelling Molecilar Evolution and Phylogenetics</strong> <br/></td>
-            <td>
-              <strong>Detecting Positive selection with Codon Models</strong> <br/></td>
-            <td>
-              <strong>Genomics Pipelines</strong> <br/></td>
-          </tr>
-          <tr>
-            <td> </td>
-            <td>
-              <em>Room D215 ‘Cerebrum’, Biology Building</em></td>
-            <td>
-
-              <em>Room G110 ‘Heden’, Ecology Building</em></td>
-            <td>
-              <em>Room G110 ‘Heden’, Ecology Building</em></td>
-          </tr>
-          <tr>
-            <td> 08:30 </td>
-            <td><p><b>Maria Anisimova</b> <br>
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/01%20Modeling%20Molecular%20Evolution%202022opt.pdf">Markov Models of Sequence Evolution</a></p></td>
-            <td><p><strong>Maria Anisimova</strong> <br>
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/04%20PositiveSelection%202022%20opt.pdf">Natural Selection and Codon Models</a></p></td>
-            <td><p><strong>Maria Anisimova</strong><br>
-            <a href="https://github.com/acg-team/Selection-in-Genes-Course/blob/gh-pages/lectures/07%20DetectSelection%20BrachSiteModels%202022%20opt.pdf">Detecting Episodic Positive Selection</a></p></td>
-          </tr>
-          <tr>
-            <td> 09:30 </td>
-            <td>
-              <p><b>Jūlija Pečerska</b><br>
-              Phylogenetic Software</p></td>
-            <td><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/simple-codon-model/">One Ratio Model Inference in PAML</a> </td>
-            <td><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/branch-site-model/">Branch-site Model Inference in PAML</a> </td>
-          </tr>
-          <tr>
-            <td> 10:00 </td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-          </tr>
-           <tr>
-            <td> 10:30 </td>
-            <td rowspan="2"><b>Maria Anisimova</b> <br />
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/02%20Hypothesis%20Testing%202022%20opt.pdf">Hypothesis Testing and Model Selection</a></td>
-            <td rowspan="2"><b>Maria Anisimova</b> <br />
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/05%20DetectSelection%20BranchModels%202022%20opt.pdf">Modelling Variability of Selection</a> </td>
-            <td><b>Maria Anisimova</b> <br />
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/08%20Selection_Pipelines%202022%20opt.pdf">Pipelining for Large-Scale Analyses</a> </td>
-          </tr>
-          <tr>
-            <td> 11:00 </td>
-            <td rowspan="2"><b>Jūlija Pečerska, Maria Anisimova</b> <br>Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/pipelines/">Pipelining</a></td>
-          </tr>
-          <tr>
-            <td> 11:30 </td>
-            <td><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/parameter-estimation/">Parameter Estimation in PhyML</a> </td>
-            <td ><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/branch-model/">Branch Models in PAML</a></td>
-          </tr>
-            
-          <tr>
-            <td> 12:00 </td>
-            <td>Lunch</td>
-            <td>Lunch</td>
-            <td>Lunch</td>
-          </tr>
-          <tr>
-            <td> 13:30 </td>
-            <td> <a href="https://quizizz.com/join?gc=196895">Tree-thinking Quiz</a> </td>
-            <td rowspan="2"> <b>Maria Anisimova</b> <br />
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/06%20DetectSelection%20SiteModels%202022%20opt.pdf">Site Models, Detecting Residues under Selection</a> </td>
-            <td rowspan="2"> <b>Jūlija Pečerska, Maria Anisimova</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/pipelines/">Pipelining</a></td>
-          </tr>
-          <tr>
-            <td> 14:00 </td>
-            <td><b>Maria Anisimova</b> <br />
-              <a href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/03%20Phylogeny%20Inference%202022%20opt.pdf">Phylogenetic Inference</a></td>
-          </tr>
-          <tr>
-            <td> 15:00 </td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-            <td>Break <br> <em>Café Le Mani, Ecology Building</em></td>
-          </tr>
-          <tr>
-            <td> 15:30 </td>
-           <td rowspan="2"><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/model-selection/">Model Selection</a> and <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/tree-search/">ML Tree Inference in PhyML</a> </td>
-            <td rowspan="2"><b>Jūlija Pečerska</b> <br />
-              Tutorial: <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/site-model/">Site Models in PAML</a> </td>
-            <td><b>Maria Anisimova, Jūlija Pečerska</b> <br />
-              Wrap up </td>
-          </tr>
-          <tr>
-            <td> 16:00 </td>
-            <td> Workshop over </td>
-          </tr>
-          <tr>
-            <td> 17:00 </td>
-            <td> Day over </td>
-            <td> Day over </td>
-            <td> </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h1 id="software">Software</h1>
-      <p><strong>You should bring your own laptop to the workshop.</strong> The software below will be used for the exercises. Installing it prior to the workshop is highly encouraged, but the first practical session will be dedicated to making sure everyone can run the software. </p>
-      <ul>
-         <li><strong>
-          PhyML:</strong> PhyML is a software package that uses modern statistical approaches to analyse alignments of nucleotide or amino acid sequences in a phylogenetic framework <a href="http://www.atgc-montpellier.fr/phyml/">(download)</a>.</li>
-        <li><strong>
-          PAML:</strong> PAML is a package of programs for phylogenetic analyses of DNA or protein sequences using maximum likelihood <a href="http://abacus.gene.ucl.ac.uk/software/paml.html">(download)</a>.</li>
-        <li><strong>
-          FigTree:</strong> FigTree is a graphical viewer of phylogenetic trees <a href="http://beast.community/figtree">(download)</a>.</li>
-        <li><strong>AliView:</strong> AliView is an alignment viewer and editor <a href="https://ormbunkar.se/aliview/">(download)</a>.</li>
-
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="footerspacer"></div>
-<div class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <ul class="list-group list-group-horizontal">
-          <li class="footernav list-group-item"><a class="foot" href="/Selection-in-Genes-Course/about/index.html">about</a></li>
-          <li class="footernav list-group-item"><a class="foot" href="/Selection-in-Genes-Course/license/index.html">license</a></li>
+      <div class="col-md-11">
+        <div class="bigtitle logobox"> Detecting Selection in Genes </div>
+      </div>
+    </div>
+    <div class="bigspacer"></div>
+
+    <div class="row">
+      <div>
+        <h1 id="lecture-slides">Lecture slides:</h1>
+        <ul>
+          <li><a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/01%20Modeling%20Molecular%20Evolution%202022opt.pdf">Markov
+              Models of Sequence Evolution</a></li>
+          <li><a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/02%20Hypothesis%20Testing%202022%20opt.pdf">Hypothesis
+              Testing and Model Selection</a></li>
+          <li><a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/03%20Phylogeny%20Inference%202022%20opt.pdf">Phylogenetic
+              Inference</a></li>
+          <li> <a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/04%20PositiveSelection%202022%20opt.pdf">Natural
+              Selection and Codon Models</a>
+          </li>
+          <li> <a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/05%20DetectSelection%20BranchModels%202022%20opt.pdf">Modelling
+              Variability of Selection</a></li>
+          <li> <a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/06%20DetectSelection%20SiteModels%202022%20opt.pdf">Site
+              Models, Detecting Residues under Selection</a></li>
+          <li> <a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/blob/gh-pages/lectures/07%20DetectSelection%20BrachSiteModels%202022%20opt.pdf">Detecting
+              Episodic Positive Selection</a></li>
+          <li> <a
+              href="https://github.com/acg-team/Selection-in-Genes-Course/raw/gh-pages/lectures/08%20Selection_Pipelines%202022%20opt.pdf">Pipelining
+              for Large-Scale Analyses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 id="tutorials">Tutorials:</h1>
+        <ul>
+          <li> <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/pipelines/">Pipelining</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/parameter-estimation/">Parameter
+              Estimation in PhyML</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/model-selection/">Model
+              Selection</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/tree-search/">ML
+              Tree Inference in
+              PhyML</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/simple-codon-model/">One Ratio
+              Model Inference in PAML</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/branch-model/">Branch
+              Models in PAML</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/site-model/">Site Models
+              in PAML</a></li>
+          <li><a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/branch-site-model/">Branch-site
+              Model Inference in PAML</a></li>
+          <li> <a href="https://acg-team.github.io/Selection-in-Genes-Course/tutorials/pipelines/">Pipelining</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h1 id="software">Software</h1>
+        <p>The software below will be used for the exercises. </p>
+        <ul>
+          <li><strong>
+              PhyML:</strong> PhyML is a software package that uses modern statistical approaches to analyse
+            alignments of nucleotide or amino acid sequences in a phylogenetic framework <a
+              href="http://www.atgc-montpellier.fr/phyml/">(download)</a>.</li>
+          <li><strong>
+              PAML:</strong> PAML is a package of programs for phylogenetic analyses of DNA or protein sequences
+            using maximum likelihood <a href="http://abacus.gene.ucl.ac.uk/software/paml.html">(download)</a>.
+          </li>
+          <li><strong>
+              FigTree:</strong> FigTree is a graphical viewer of phylogenetic trees <a
+              href="http://beast.community/figtree">(download)</a>.</li>
+          <li><strong>AliView:</strong> AliView is an alignment viewer and editor <a
+              href="https://ormbunkar.se/aliview/">(download)</a>.</li>
+
         </ul>
       </div>
     </div>
   </div>
-</div>
+  <div class="footerspacer"></div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group list-group-horizontal">
+            <li class="footernav list-group-item"><a class="foot"
+                href="/Selection-in-Genes-Course/about/index.html">about</a></li>
+            <li class="footernav list-group-item"><a class="foot"
+                href="/Selection-in-Genes-Course/license/index.html">license</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>

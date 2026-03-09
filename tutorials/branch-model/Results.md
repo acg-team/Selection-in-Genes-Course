@@ -6,7 +6,7 @@ In case you would like to compare your configuration files to the ones that were
 
 Assuming that the output is as given in this tutorial, these are the expected answers to the tutorial questions.
 
-> - Based on LRTs, what model fits your data the best (among two-ratio, three-ratio and free-ratio models)? 
+> - Based on LRTs, what model fits your data the best (among two-ratio, three-ratio and free-ratio models)?
 
 Before we can do LRTs we need to first determine which models are nested and compute the number of parameters for each model.
 
@@ -41,8 +41,6 @@ To get a better gauge on what models make the most sense for our data, we might 
 | M0 vs Two-ratio   | 2(-904.637 - (-906.017)) = 2.76  | 14 - 13 = 1        | 0.0966       |
 
 These tests confirm our previous conclusions. Firstly, we can reject the M0 model in favour of the free- and three-ratio models. Secondly, we cannot reject the M0 in favour of the two-ratio model. Combined with our previous tests, we can conclude that of all the models tested the three-ratio one is the best choice, with the M0 and two-ratio models being too constrained and the free-ratio model likely being too free for the data at hand.
-
-However, we are now performing 6 different tests based on the same data and analyses, meaning that we need to perform at least some basic kind of multiple testing correction. We can use Bonferroni correction, which is a conservative approach in which we simply divide the selected p-value by the number of tests and use that as the cutoff in each of the tests. In this case we selected 0.05 as our p-value, which means that with the correction the p-value for each of the tests performed will be 0.05/6 = 0.008(3). Notably, the two- vs three-ratio test and the M0 vs three-ratio test still hold, confirming our inicial conclusion.
 
 > - What are the estimates of ω from the best model? What can you conclude from them?
 

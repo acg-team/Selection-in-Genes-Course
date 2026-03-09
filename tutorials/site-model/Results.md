@@ -16,7 +16,7 @@ The M7 model is a restricted version of the M8 model where p<sub>0</sub> is cons
 
 Similarly, the M8a model is a restricted version of the M8 model. The M8a model restricts the free value of ω for the p<sub>1</sub> class to 1, meaning that the parameter of the M8a model lies on the edge of the parameter space for M8. This in turn means that we need to use a mixture distribution of 0 and χ<sup>2</sup><sub>1</sub> to check for significance, or we can use χ<sup>2</sup><sub>1</sub> for a more conservative test.
 
-We can now compute the test statistic for all tests: 2Δl = 2(l<sub>alternative</sub> - l<sub>null</sub>). We will use the critical p-value of 0.05, but as we are performing 3 different tests on the same dataset we will apply the Bonferroni correction, meaning that to be significant the p-value for the test needs to be less than 0.05 / 3 = 0.016(6).
+We can now compute the test statistic for all tests: 2Δl = 2(l<sub>alternative</sub> - l<sub>null</sub>). We will use the critical p-value of 0.05.
 
 | Models            | LRT                                 | Degrees of freedom | Significance            |
 | ----------------- | ----------------------------------- | ------------------ | ----------------------- |
@@ -37,7 +37,7 @@ Both tests between the **M7** and the M8 **and** the **M8a** and **M8** models a
 LRTs do suggest positive selection, and looking at the ourput files for the M8 model we see that 8 sites are inferred to be under positive selection:
 
             Pr(w>1)     post mean +- SE for w
-    
+
      7 S      0.979*        2.442 +- 0.534
     42 S      0.539         1.625 +- 0.846
     48 T      0.833         2.176 +- 0.753
@@ -50,6 +50,6 @@ If we look for sites where ω is strictly above 1 (the ω value is above 1 even 
 
 > - Compare your results to the analyses of this dataset (**D2** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 
-Yes, they do. 
+Yes, they do.
 
 On top of all the tests performed in the original paper we also performed the **M8a** vs **M8** test, for which the asymptotic distribution of the test statistic follows from standard theory, whereas for the **M7** vs **M8** test the distribution of the test statistic is an ad hoc approximation. This can make the **M8a** vs **M8** test more powerful, however this property only holds if for the positively selected sites the value of ω is significantly greater than one. In this case both tests reject the null hypotheses, and **M8** estimates the ω on positively selected sites at 2.081.

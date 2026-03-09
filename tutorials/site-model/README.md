@@ -15,9 +15,9 @@ The files are available on the left-hand panel under the heading **Data**.
 
 ## Setting up the analysis with CodeML
 
-CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. Unlike PhyML, CodeML works with control files rather than command line options. 
+CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. Unlike PhyML, CodeML works with control files rather than command line options.
 
-For this tutorial you will first need to understand the control file options that CodeML provides. These options are described in the PAML package [documentation](http://abacus.gene.ucl.ac.uk/software/pamlDOC.pdf), available from the PAML [website](http://abacus.gene.ucl.ac.uk/software/paml.html).
+For this tutorial you will first need to understand the control file options that CodeML provides. These options are described in the PAML package [documentation](https://github.com/abacus-gene/paml?tab=readme-ov-file#readme), available on the PAML [GitHub page](https://github.com/abacus-gene/paml).
 
 One important recommendation is to start with an existing control file and modify it to suit your needs. More often than not wtiting a file like that from scratch will be more trouble than it's worth.
 

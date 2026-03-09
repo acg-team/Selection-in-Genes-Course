@@ -2,7 +2,7 @@
 
 ## Motivation
 
-Detecting selection is a powerful tool to increase our understanding of evolution. To start off easy, we will run an analysis with the simple one ratio model, one that assumes the same selective pressure on all sites and throughout time. 
+Detecting selection is a powerful tool to increase our understanding of evolution. To start off easy, we will run an analysis with the simple one ratio model, one that assumes the same selective pressure on all sites and throughout time.
 
 In this tutorial we will use CodeML - a program from the PAML package from Ziheng Yang - to detect whether a specific gene is under selection. We will use a dataset that was previously published and try to recreate existing results.
 
@@ -19,9 +19,9 @@ The files are available on the left-hand panel under the heading **Data**.
 
 ## Setting up the analysis with CodeML
 
-CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. Unlike PhyML, CodeML works with control files rather than command line options. 
+CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. Unlike PhyML, CodeML works with control files rather than command line options.
 
-For this tutorial you will first need to understand the control file options that CodeML provides. These options are described in the PAML package [documentation](http://abacus.gene.ucl.ac.uk/software/pamlDOC.pdf), available from the PAML [website](http://abacus.gene.ucl.ac.uk/software/paml.html).
+For this tutorial you will first need to understand the control file options that CodeML provides. These options are described in the PAML package [documentation](https://github.com/abacus-gene/paml?tab=readme-ov-file#readme), available on the PAML [GitHub page](https://github.com/abacus-gene/paml).
 
 One important recommendation is to start with an existing control file and modify it to suit your needs. More often than not wtiting a file like that from scratch will be more trouble than it's worth.
 
@@ -71,7 +71,7 @@ Additionally, set the name of the output file to `HIVenvSweden_M0_randominitialb
 Now that you ran both analyses, open the statistics files from the two runs. Study the output of the runs and try to answer the following questions:
 
 > - Among the two first runs, when is the log-likelihood higher? Why do you think it is?
-> - What are the estimates of the transition-transversion ratio κ? 
+> - What are the estimates of the transition-transversion ratio κ?
 > - What are the estimates of ω? How would you interpret these estimates?
 > - Compare your results to the analyses of this dataset (**D10** in the paper) in the original PAML [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1461088/). Do your observations agree with those of Yang et al.?
 > - Between the second run and the "bonus" run, are the tree branch estimates different? Are there a lot of differences between the two runs?

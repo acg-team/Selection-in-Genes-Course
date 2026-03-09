@@ -15,7 +15,7 @@ The files are available on the left-hand panel under the heading **Data**.
 
 ## Setting up the analysis with CodeML
 
-CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. The control file options you need to set for your analyses are described in the PAML package [documentation](http://abacus.gene.ucl.ac.uk/software/pamlDOC.pdf), available from the PAML [website](http://abacus.gene.ucl.ac.uk/software/paml.html).
+CodeML is a part of the software package PAML that allows you to use codon models to detect selection on protein-coding genes. The control file options you need to set for your analyses are described in the PAML package [documentation](https://github.com/abacus-gene/paml?tab=readme-ov-file#readme), available on the PAML [GitHub page](https://github.com/abacus-gene/paml).
 
 In this tutorial, we will run the LRT for branch-site positive selection. For this test we have to first define the foreground and background branches in the phylogenetic tree of given sequences. Only the foreground branches may experience positive selection. In this analysis we have a biological hypothesis for what branches may experience positive selection (*Colobine* monkeys), however this might not always be the case. When no biological hypothesis is available to select foreground branches, apossible approach is to test several or all branches on the tree, treating every branch  in turn as the foreground branch. However, if we run such tests we need to apply multiple testing correction as the probability of rejecting falsely at least one of the hypotheses can be high (see [Anisimova and Yang. 2007](https://academic.oup.com/mbe/article/24/5/1219/1041272?)).
 
